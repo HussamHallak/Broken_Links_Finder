@@ -37,5 +37,7 @@ Required Python version:
 Required Libraries:
 ===================
 urlib2
+
 bs4 (Beautifulsoup)
+
 re (regular expressions)
