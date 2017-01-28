@@ -24,9 +24,6 @@ else:
 	file.write("\n")
 	soup = BeautifulSoup(html_page, "html.parser")
 	links = []
-	#You can add as many error codes as you want to this list. Error codes include: 
-	# 404 Not Found, 400 Bad request, 403 Forbidden, 301 Moved Permanently, 204 No Content,...etc
-	error_codes = [404, 400, 403, 301, 204]
 	for link in soup.findAll('a', attrs={'href': re.compile("^http://")}):
 		links.append(link.get('href'))
 	counter = 1
